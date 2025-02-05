@@ -38,7 +38,8 @@ function App() {
     try {
       const response = await axios.post(
         `http://localhost:8080/api/email/generate`,
-        { emailContent, tone }
+        {emailContent ,tone}
+        // { emailContent: sanitizedEmailContent, tone }
       );
       setGeneratedReply(
         typeof response.data === "string"
