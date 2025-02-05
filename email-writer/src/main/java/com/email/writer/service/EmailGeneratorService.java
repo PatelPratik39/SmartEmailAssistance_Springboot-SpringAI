@@ -61,7 +61,6 @@ public class EmailGeneratorService {
 
 //       Extract response and Return
         return extractResponseContent(response);
-
     }
 
     private String extractResponseContent(String response) {
