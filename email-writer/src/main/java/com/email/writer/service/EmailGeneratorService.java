@@ -110,8 +110,26 @@ public class EmailGeneratorService {
     private String buildPrompt(EmailRequest emailRequest) {
         StringBuilder prompt = new StringBuilder();
         prompt.append("Generate a professional email reply for the following email content. Please do not generate a subject line ");
-        if(emailRequest.getTone() != null && !emailRequest.getTone().isEmpty()) {
-            prompt.append("Use a ").append(emailRequest.getTone()).append(" tone for the email content. ");
+//        if(emailRequest.getTone() != null && !emailRequest.getTone().isEmpty()) {
+//            prompt.append("Use a ").append(emailRequest.getTone()).append(" tone for the email content. ");
+//        }
+
+        if (emailRequest.getTone() != null && !emailRequest.getTone().isEmpty()) {
+            switch (emailRequest.getTone().toLowerCase()) {
+                case "professional":
+                    prompt.append("Compose a professional, concise, and polite email response to the following email content.");
+                    break;
+                case "casual":
+                    prompt.append("Write a friendly and casual email response to the following email. Keep it light and approachable.");
+                    break;
+                case "friendly":
+                    prompt.append("Generate a warm and engaging email response, using a friendly and welcoming tone.");
+                    break;
+                default:
+                    prompt.append("Write a well-structured and appropriate email response.");
+            }
+        } else {
+            prompt.append("Write a well-structured and appropriate email response.");
         }
 
         prompt.append("Ensure the reply has: a polite greeting, clear response, and a professional closing. ");
