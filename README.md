@@ -160,3 +160,18 @@ Replace **`${GEMINI_API_URL}`** and **`${GEMINI_API_KEY}`** with valid API crede
 
 ### 8. XSS Attack Prevention Test
 ![XSS Attack](XSS_Attack.png)
+
+### 9. Google Chrome Extension for AI Email
+![My own Smart Ai Email response Chrome Extension](ChromeExtention.png)
+
+
+### 10. AI Email Response
+![Smart AI Email response using personal Extention](AIemailResponse1.png)
+
+### 11. AI Email Response2
+![Smart AI Email response using personal Extention](AIemailResponse2.png)
+
+### 12. AI Email Response3
+![Smart AI Email response using personal Extention](AIemailResponse3.png)
+
+
