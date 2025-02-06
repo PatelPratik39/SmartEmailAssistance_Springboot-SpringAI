@@ -49,7 +49,7 @@ This extension integrates seamlessly with Gmail, adding a new "AI Reply" button 
 ### 1️⃣ Prerequisites
 Ensure you have the following installed:
 - **Node.js** (for frontend)
-- **Java 17+** (for Spring Boot backend)
+- **Java 21+** (for Spring Boot backend)
 - **Maven** (for dependency management)
 
 ### 2️⃣ Clone the Repository
